@@ -254,9 +254,9 @@ install(TARGETS re2
         FRAMEWORK DESTINATION ${CMAKE_INSTALL_LIBDIR}
         PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/re2
         INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
-install(EXPORT re2Targets
-        DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/re2
-        NAMESPACE re2::)
+# install(EXPORT re2Targets
+#         DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/re2
+#         NAMESPACE re2::)
 
 configure_package_config_file(${CMAKE_CURRENT_SOURCE_DIR}/re2Config.cmake.in
                               ${CMAKE_CURRENT_BINARY_DIR}/re2Config.cmake
